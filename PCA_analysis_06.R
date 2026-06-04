@@ -8,9 +8,8 @@ library(tidyr)
 library(ggrepel)
 
 # ------------------ User settings ------------------
-file_path  <- "E:/USB/2024/Project work/Proteomics/Differeniation/Result file/data/Protein_Groups__2025-10-02T19-45-01.xlsx"
-sheet_name <- "Data"
-save_dir   <- "E:/USB/2025/Manuscripts/data"
+file_path <- "Protein_Groups.xlsx"
+save_dir  <- "output"
 
 plot_width  <- 8
 plot_height <- 6
