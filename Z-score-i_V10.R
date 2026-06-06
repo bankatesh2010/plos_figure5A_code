@@ -6,11 +6,11 @@ library(tidyr)
 library(ggpubr)
 
 # Read the specific sheet
-file_path <- "E:/USB/2024/Project work/Proteomics/Differeniation/Proteomics_data_codon_count_D8.xlsx"
+file_path <- "Proteomics_data_codon_count_D8.xlsx"
 proteomics_data <- read_excel(file_path, sheet = "KO-D8-WTAB")
 
 # Define save directory
-save_dir <- "E:/USB/2025/Manuscripts/data"
+save_dir  <- "output"
 
 # Create the directory if it doesn't exist
 if (!dir.exists(save_dir)) {
