@@ -4,13 +4,20 @@ library(dplyr)
 library(ggplot2)
 library(ggpubr)
 
-# ————— User settings —————
-file_path    <- "E:/USB/2024/Project work/Proteomics/Differeniation/Result file/Protein_Groups - D8_D13.xlsx"
+# ----------------------------------------------------------
+# Input file and settings
+# ----------------------------------------------------------
+
+# Input file
+file_path <- "Protein_Groups_D8_D13.xlsx"
+
 sheet_name   <- "Data"
 fold_col     <- "logFC (KOD8-WTD8)"
 codon_column <- "O_f_NAC"
-save_dir     <- "E:/USB/2025/Manuscripts/data"
-out_base     <- "codon_vs_foldchange_KOD8_WTD8"
+
+# Output settings
+save_dir <- "output"
+out_base <- "codon_vs_foldchange_KOD8_WTD8"
 # Plot template
 plot_width  <- 6    # inches
 plot_height <- 5    # inches
