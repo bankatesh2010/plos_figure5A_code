@@ -6,7 +6,8 @@ library(tidyr)
 library(ggpubr)
 
 # Define file path and sheet name
-file_path  <- "E:/USB/2025/Proteomics/Geneontology/Gene ontology_KO_exclusive.xlsx"
+# Input file
+file_path <- "Gene_ontology_KO_exclusive.xlsx"
 sheet_name <- "GoEnrichmentResult"
 
 # Read the data 
@@ -94,8 +95,8 @@ dot_plot <- ggplot(
 print(dot_plot)
 
 # Save plot
-save_dir <- "E:/USB/2025/Proteomics/Geneontology"
-if (!dir.exists(save_dir)) dir.create(save_dir, recursive = TRUE)
+# Output directory
+save_dir <- "output"
 
 ggsave(
   filename = file.path(save_dir, "GO_DotPlot_new_3.png"),
