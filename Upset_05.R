@@ -7,9 +7,12 @@ library(ggplot2)
 library(ComplexUpset)
 
 # ----------------------------------------------------------
-# File path and sheet names
+# Input file and sheet names
 # ----------------------------------------------------------
-file_path <- "E:/USB/2024/Project work/Proteomics/Differeniation/Result file/Proteomics_down and significant.xlsx"
+
+# Place the Excel file in the working directory
+file_path <- "Proteomics_down_and_significant.xlsx"
+
 sheet_down <- "KO-WTAB-down-all"
 sheet_up   <- "KO-WTAB-up-all"
 
