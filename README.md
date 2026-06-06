@@ -1,24 +1,38 @@
 # Code for manuscript figures
 
-This repository contains R scripts used to generate figures associated with the manuscript.
+This repository contains the R scripts used to generate figures and analyses reported in the manuscript.
 
-Files
+## Included scripts
 
-* PCA_analysis_06.R
+### Figure 5A
+- PCA_analysis_06.R
+  - Principal Component Analysis (PCA) of proteomics data.
 
-  * PCA analysis and generation of Figure 5A
+### Figure 5B
+- Upset_05.R
+  - UpSet analysis of differentially expressed proteins.
 
-* Upset_05.R
+### Figure 5C
+- Geneontology_v6.R
+  - Gene Ontology enrichment analysis and dot plot generation.
 
-  * UpSet analysis and generation of Figure 5B
+### Figure 6A
+- correaltion plot_v8.R
+  - Correlation analysis between codon frequency and protein fold change.
 
-Required R packages:
+### Figures 6B–6C
+- Z-score-i_V10.R
+  - Codon Z-score analysis and visualization.
 
-* readxl
-* dplyr
-* ggplot2
-* ggpubr
-* stringr
-* tidyr
-* ggrepel
-* ComplexUpset
+## Required R packages
+
+- readxl
+- dplyr
+- ggplot2
+- ggpubr
+- tidyr
+- ComplexUpset
+
+## Notes
+
+Input data files are not included in this repository. File paths were generalized to facilitate code reuse and reproducibility.
